@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions: {}
+jobs:
+  check:
+    name: check
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Litch GitHub E2E CI'
